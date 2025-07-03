@@ -135,3 +135,9 @@
             const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#ff9900'];
             return colors[Math.floor(Math.random() * colors.length)];
         }
+
+        // Compteur de visiteurs
+let visitors = localStorage.getItem('visitors') || 0; // Récupérer le compteur depuis le stockage local
+visitors++; // Incrémenter le compteur
+localStorage.setItem('visitors', visitors); // Sauvegarder le nouveau compteur
+document.getElementById('visitor-counter').textContent = `Visiteurs : ${visitors}`; // Afficher le compteur

@@ -136,8 +136,8 @@
             return colors[Math.floor(Math.random() * colors.length)];
         }
 
-        // Compteur de visiteurs
+       // Compteur de visiteurs
 let visitors = localStorage.getItem('visitors') || 0; // Récupérer le compteur depuis le stockage local
 visitors++; // Incrémenter le compteur
 localStorage.setItem('visitors', visitors); // Sauvegarder le nouveau compteur
-document.getElementById('visitor-counter').textContent = `Visiteurs : ${visitors}`; // Afficher le compteur
+document.getElementById('visitor-counter').textContent = `Nbre de visite : ${visitors}`; // Afficher le compteur

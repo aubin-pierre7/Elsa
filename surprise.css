@@ -73,3 +73,39 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Responsive pour les tablettes (écrans entre 768px et 1024px) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 1.5rem; /* Réduire la taille du texte */
+    }
+
+    .animated-text {
+        font-size: 2.5rem; /* Ajuster la taille du texte animé */
+    }
+
+    .btn {
+        padding: 10px 25px; /* Réduire la taille du bouton */
+    }
+}
+
+/* Responsive pour les téléphones (écrans de moins de 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 1.2rem; /* Réduire davantage la taille du texte */
+        padding: 10px; /* Ajouter un peu de marge interne */
+    }
+
+    .animated-text {
+        font-size: 2rem; /* Ajuster la taille du texte animé */
+    }
+
+    .btn {
+        padding: 8px 20px; /* Réduire la taille du bouton */
+        margin-top: 20px; /* Réduire l'espace au-dessus du bouton */
+    }
+
+    footer {
+        font-size: 0.8rem; /* Réduire la taille du texte du footer */
+    }
+}

@@ -1,0 +1,75 @@
+/* Styles de base */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #ffcce6, #ff99cc, #ff66b3);
+    color: #5a2d3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.animated-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #d42d6b;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #d42d6b;
+    animation: typing 10s steps(50, end), blink 0.8s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: #d42d6b;
+    }
+}
+
+/* Bouton retour */
+.btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #d42d6b, #ff66b3);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 40px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(212, 45, 107, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(212, 45, 107, 0.6);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #5a2d3e;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

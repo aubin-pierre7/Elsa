@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeux Anniversaire Mon Amie!</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="Flavicon.png">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <!-- Roses flottantes -->
+    <div id="roses-container"></div>
+
+    <!-- Conteneur principal -->
+    <div class="container">
+        <!-- En-tête -->
+        <header>
+            <h1 class="heartbeat">Joyeux Anniversaire <span id="friend-name">Elsa</span>!</h1>
+            <p>Une journee speciale pour une personne extraordinaire ❤</p>
+        </header>
+
+        <!-- Galerie photo -->
+        <section class="photo-gallery">
+            <div class="photo-frame">
+                <div class="photo-placeholder">PLUS</div>
+                <img src="IMG-20250327-WA0189.jpg" alt="">
+            </div>
+            <div class="photo-frame">
+                <div class="photo-placeholder">DE</div>
+                <img src="IMG-20250529-WA0256(1).jpg" alt="">
+            </div>
+            <div class="photo-frame">
+                <div class="photo-placeholder">CAMERA</div>
+                <img src="IMG-20250529-WA0257(1).jpg" alt="">
+            </div>
+            <div class="photo-frame">
+                <div class="photo-placeholder">STP🙄</div>
+                <img src="IMG-20250507-WA0097(1).jpg" alt="">
+            </div>
+        </section>
+
+        <!-- Compte à rebours -->
+        <section class="countdown">
+            <h2>Prochain anniversaire dans:</h2>
+            <div class="countdown-timer">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Jours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Heures</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Secondes</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Messages -->
+        <section class="message-section">
+            <h2>Messages d'anniversaire</h2>
+
+            <div class="message">
+                <h3></h3>
+                <p>Ma chere amie, en ce jour spécial, je voulais te dire a quel point tu es importante pour moi...Euh je ne sais plus quoi dire😅. Passe une merveilleuse journee remplie de joie et
+                    d'amour!</p>
+            </div>
+
+            <div class="message">
+                <h3>Souvenirs</h3>
+                <p>Euh je ne sais pas quoi dire😅.</p>
+            </div>
+
+            <div class="message">
+                <h3>Pour l'avenir</h3>
+                <p>Je te souhaite une annee incroyable devant toi, remplie de bonheur, de reussite et de nouvelles
+                    aventures. J'ai hate de creer encore plus de souvenirs avec toi!</p>
+            </div>
+        </section>
+
+        <!-- Carte de voeux -->
+        <div class="card">
+            <div class="card-content">
+                <h2>Pour toi, mon amie</h2>
+                <p>En ce jour special, je voulais te dire merci pour tout ce que tu apportes dans ma vie. Ton amitié est
+                    un cadeau precieux que je crois cherire chaque jour🤔.</p>
+                <p>Que cette nouvelle annee de vie t'apporte tout le bonheur que tu merites, des reves qui se realisent
+                    et des eclats de rire a partager.</p>
+                <p>Avec tout mon amitie,</p>
+                <p><strong>Aubin. <br> Euh pour les accents😅 tu connais l'histoire... </br></strong></p>
+                <button class="btn" id="surprise-btn" onclick="window.location.href='surprise.html'">Clique pour un cadeau!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contrôles audio -->
+<div class="audio-controls">
+    <button id="play-btn">▶ Jouer</button>
+    <button id="pause-btn">⏸ Pause</button>
+    <audio id="birthday-song" loop>
+        <source src="Katy Perry Birthday.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+    </audio>
+</div>
+
+<script>
+    // Gestion des boutons de lecture et de pause
+    const playBtn = document.getElementById('play-btn');
+    const pauseBtn = document.getElementById('pause-btn');
+    const audio = document.getElementById('birthday-song');
+
+    playBtn.addEventListener('click', () => {
+        audio.play();
+    });
+
+    pauseBtn.addEventListener('click', () => {
+        audio.pause();
+    });
+</script>
+
+    <footer>
+        <p>&copy; 2025 Joyeux Anniversaire Elsa. Cree par Aubin.</p>
+    </footer>
+
+<script src="script.js"></script>       

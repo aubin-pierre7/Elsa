@@ -16,3 +16,8 @@ Ce projet a ete realise avec amour et creativite pour partager des souvenirs, de
 -*CSS3*
 
 -*JavaScript*
+
+##  Captures d'écran:  
+
+| ![Vue](./Captures/Vue.png) | ![Rebours](./Captures/Rebours.png) | ![Surprise](./Captures/Surprise.png) | .
+
